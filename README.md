@@ -12,7 +12,6 @@ The **Social Media Virality Prediction** project is a machine learning-based sys
 ## Tech Stack
 - **Backend:** FastAPI, Python, Uvicorn
 - **Frontend:** HTML, CSS, JavaScript
-- **Database:** PostgreSQL (or any preferred database)
 - **Machine Learning Models:** TensorFlow / PyTorch
 
 ## Installation
