@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Misinformation Status</title>
+  <link rel="stylesheet" href="misinformation_status.css">
+</head>
+<body>
+    <div class="score-container">
+        <h1>MISINFORMATION STATUS</h1>
+        <div id="score-box">Score</div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const scoreBox = document.getElementById("score-box");
+            const misinformationScore = localStorage.getItem("misinformationScore");
+            if (misinformationScore) {
+                scoreBox.textContent = `Score: ${misinformationScore}%`;
+            } else {
+                scoreBox.textContent = "Score not available";
+            }
+        });
+    </script>
+</body>
+</html>
